@@ -2,7 +2,6 @@
 
 # symlink yadm archive
 ln -sf ~/.dotfiles-secrets/hosts/gentoo-personal-laptop/yadm_archive ~/.local/share/yadm/archive
-
 # decrypt secrets
 yadm decrypt
 
@@ -11,4 +10,7 @@ gpg --import ~/.gpg/gentoo-personal-laptop-github.gpg
 
 # set yadm origin as ssh
 yadm remote set-url origin git@github.com:PedroJoaoPereira/dotfiles-gentoo-personal-laptop.git
+
+# symlink portage configurations
+ln -sf ~/.portage/* /etc/portage/
 

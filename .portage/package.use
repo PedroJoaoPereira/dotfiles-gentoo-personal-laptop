@@ -1,0 +1,5 @@
+sys-kernel/installkernel dracut grub
+net-wireless/wpa_supplicant dbus
+app-admin/doas persist
+media-video/pipewire sound-server
+

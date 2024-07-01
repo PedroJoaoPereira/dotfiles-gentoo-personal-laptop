@@ -1,0 +1,5 @@
+sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
+sys-firmware/intel-microcode intel-ucode
+www-client/google-chrome google-chrome
+net-im/discord all-rights-reserved
+

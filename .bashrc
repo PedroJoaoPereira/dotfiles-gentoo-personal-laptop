@@ -34,7 +34,7 @@ eval "$(zoxide init --cmd cd bash)"
 alias reboot='doas reboot' # alias for reboot
 alias shutdown='doas shutdown -h now' # alias for shut down now
 
-alias ls='eza --long --icons=always --all --git' # alias for ls with eza
+alias ls='eza --long --icons --all --sort=type' # alias for ls with eza
 alias vi='nvim' # alias for neovim
 alias doas='doas ' # alias for doas
 
