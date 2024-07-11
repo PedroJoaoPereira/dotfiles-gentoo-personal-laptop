@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "Bootstrapping all scripts to user's script directory..."
+
+# symlink all files inside the directory
+find ~/.local/bin/scripts/ -type f -exec ln -sfv "{}" ~/.local/bin/ ';'
+
+echo "Done!"
+

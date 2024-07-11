@@ -1,5 +1,10 @@
 sys-kernel/installkernel dracut grub
-net-wireless/wpa_supplicant dbus
 app-admin/doas persist
 media-video/pipewire sound-server
+gnome-base/gnome bluetooth classic extras -accessibility cups
+x11-wm/dwm savedconfig
+x11-misc/dmenu savedconfig
+x11-terms/st savedconfig
+net-misc/networkmanager -modemmanager
+dev-libs/libdbusmenu gtk3
 

@@ -16,6 +16,9 @@ fi
 
 # ----- ----- ----- ----- -----
 
+# add custom personal scripts to path if they are not there
+[ "${PATH#*$HOME/.local/bin:}" == "$PATH" ] && export PATH="$HOME/.local/bin:$PATH"
+
 # enabling gpg-agent ioctl
 export GPG_TTY=$(tty)
 # start authentication agent manager

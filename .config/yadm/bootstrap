@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# source bash settings
+source ~/.bashrc
+
 # symlink yadm archive
 ln -sf ~/.config/dotfiles-secrets/hosts/gentoo-personal-laptop/yadm_archive ~/.local/share/yadm/archive
 # decrypt secrets
@@ -7,10 +10,22 @@ yadm decrypt
 
 # import gpg signing keys
 gpg --import ~/.gpg/gentoo-personal-laptop-github.gpg
-
 # set yadm origin as ssh
 yadm remote set-url origin git@github.com:PedroJoaoPereira/dotfiles-gentoo-personal-laptop.git
 
 # symlink portage configurations
 doas ln -sf ~/.config/portage/* /etc/portage/
+# symlink crontab setup
+doas ln -sf ~/.config/cron/* /etc/
+
+# copy suckless configurations
+doas cp ~/.config/dwm/* /etc/portage/savedconfig/x11-wm/
+doas cp ~/.config/dmenu/* /etc/portage/savedconfig/x11-misc/
+doas cp ~/.config/st/* /etc/portage/savedconfig/x11-terms/
+
+# boostrap scripts
+bootstrap_all_scripts
+
+# install nerd fonts
+~/.scripts/install_nerd_fonts.sh
 

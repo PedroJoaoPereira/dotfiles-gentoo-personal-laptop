@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# update saved configuration
+cp /home/chuck/.config/dwm/* /etc/portage/savedconfig/x11-wm/
+# rebuild dwm
+emerge --ask=n dwm
+
