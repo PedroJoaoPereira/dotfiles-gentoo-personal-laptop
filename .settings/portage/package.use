@@ -7,4 +7,6 @@ x11-misc/dmenu savedconfig
 x11-terms/st savedconfig
 net-misc/networkmanager -modemmanager
 dev-libs/libdbusmenu gtk3
+media-fonts/nerd-fonts X hack ubuntu ubuntumono sourcecodepro
+app-crypt/gcr gtk
 

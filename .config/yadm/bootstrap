@@ -14,7 +14,7 @@ gpg --import ~/.gpg/gentoo-personal-laptop-github.gpg
 yadm remote set-url origin git@github.com:PedroJoaoPereira/dotfiles-gentoo-personal-laptop.git
 
 # symlink portage configurations
-doas ln -sf ~/.config/portage/* /etc/portage/
+doas ln -sf ~/.settings/portage/* /etc/portage/
 # symlink crontab setup
 doas ln -sf ~/.config/cron/* /etc/
 

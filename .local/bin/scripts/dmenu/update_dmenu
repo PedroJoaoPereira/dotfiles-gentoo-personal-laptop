@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# update saved configuration
+cp /home/chuck/.config/dmenu/* /etc/portage/savedconfig/x11-misc/
+# rebuild dmenu
+emerge --ask=n dmenu
+
