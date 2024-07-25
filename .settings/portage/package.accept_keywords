@@ -1,3 +1,4 @@
 app-shells/zoxide ~amd64
 media-fonts/nerd-fonts ~amd64
+x11-apps/igt-gpu-tools ~amd64
 
